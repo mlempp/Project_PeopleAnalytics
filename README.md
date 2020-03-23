@@ -6,6 +6,7 @@ In this project I wanted to predict attrition based on employee data.
 The data is an artificial dataset from IBM data scientists. It contains data for 1470 employees. Te dataet contains the following information per emplyee:
 
 Age                         : Age of the employee.
+
 Attrition                   : If the employee left or not. 
 BusinessTravel              : If the employee has to travel. 
 DailyRate                   : The daily rate of the employee.
