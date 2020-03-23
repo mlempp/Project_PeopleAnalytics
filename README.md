@@ -1,7 +1,7 @@
 # Project1
 
-#IBM HR Analytics Employee Attrition & Performance
-
+IBM HR Analytics Employee Attrition & Performance
+_________________________________________________________________________
 In this project I wanted to predict attrition based on employee data.
 The data is an artificial dataset from IBM data scientists. It contains data for 1470 employees. Te dataet contains the following information per emplyee:
 
@@ -81,6 +81,8 @@ YearsWithCurrManager        : How long the employee works with the current manag
 The provider of the data does not give any more information on the features.
 
 
+
+________________________________________________________
 #EDA#
 
 I start with an simple exploratory data anylsis.
@@ -119,7 +121,7 @@ Summary:
 
 
 
-
+________________________________________________________
 #prepare the data for the model#
 
 1. Split the data in train and test (80-20)
@@ -127,7 +129,7 @@ Summary:
 
 
 
-
+________________________________________________________
 #train and optimize 3 different gradient-boosted tree based models#
 
 1. RandomForestClassifier
@@ -145,10 +147,12 @@ XGboost:	AUC:85.714286 F1:84.628313
 
 Bagging: 	AUC:87.074830 F1:86.092283
 
+
+
 5. Plot the metrics
 
 
-
+________________________________________________________
 #inspect the most important features for the leaving the company#
 
 1. Plot the feature importance
