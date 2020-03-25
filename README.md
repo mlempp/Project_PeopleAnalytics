@@ -3,7 +3,7 @@
 IBM HR Analytics Employee Attrition & Performance
 _________________________________________________________________________
 In this project I wanted to predict attrition based on employee data.
-The data is an artificial dataset from IBM data scientists. It contains data for 1470 employees. Te dataet contains the following information per emplyee:
+The data is an artificial dataset from IBM data scientists. It contains data for 1470 employees. Te dataset contains the following information per employee:
 
 Age                         : Age of the employee.
 
@@ -17,7 +17,7 @@ Department                  : The department where the employee is working in.
 
 DistanceFromHome            : How far the emplyee has to travel per day.
 
-Education                   : The highest degree the emplyee reached. (1 'Below College', 2 'College', 3 'Bachelor', 4 'Master', 5 
+Education                   : The highest degree the employee reached. (1 'Below College', 2 'College', 3 'Bachelor', 4 'Master', 5 
 'Doctor')
 
 EducationField              : In which field the employee graduated.
@@ -28,11 +28,11 @@ EmployeeNumber              : Individual identifier of the employee.
 
 EnvironmentSatisfaction     : The employee satisfaction with the environemnt. (1 'Low', 2 'Medium', 3 'High', 4 'Very High')
 
-Gender                      : The geneder of the employee.
+Gender                      : The gender of the employee.
 
 HourlyRate                  : The hourly rate of the employee.
 
-JobInvolvement              : The level oft the involvement in the job. (1 'Low', 2 'Medium', 3 'High', 4 'Very High')
+JobInvolvement              : The level of the involvement in the job. (1 'Low', 2 'Medium', 3 'High', 4 'Very High')
 
 JobLevel                    : The job level.
 
@@ -48,14 +48,13 @@ MonthlyRate                 : The monthly rate of the employee.
 
 NumCompaniesWorked          : In how many companies the employee worked before.
 
-Over18                      : If the employee is over 18 yeary old.
+Over18                      : If the employee is over 18 years old.
 
-OverTime                    : If the employee does overhours.
+OverTime                    : If the employee does over hours.
 
 PercentSalaryHike           : The percentage of the last raise.
 
 PerformanceRating           : The performance rating of the employee. (1 'Low', 2 'Good', 3 'Excellent', 4 'Outstanding')
-
 
 RelationshipSatisfaction    : The employee satisfaction with the private relationship. (1 'Low', 2 'Medium', 3 'High', 4 'Very High')
 
@@ -65,7 +64,7 @@ StockOptionLevel            : If the employee has stock of the company.
 
 TotalWorkingYears           : How long the employee is working already in total.
 
-TrainingTimesLastYear       : How many trainings the employee had last year.
+TrainingTimesLastYear       : How many training the employee had last year.
 
 WorkLifeBalance             : How the employee rates the work-life-balance. (1 'Bad', 2 'Good', 3 'Better', 4 'Best')
 
@@ -85,27 +84,27 @@ The provider of the data does not give any more information on the features.
 ________________________________________________________
 #EDA#
 
-I start with an simple exploratory data anylsis.
+I start with a simple exploratory data analysis.
 
 1. Check the datatypes ad if we have missing data in the dataset.
 
 2. Transform the attrition to a numerical value (1 Yes, 0 No) and drop some features (Over18, EmployeeCount, StandardHours).
 
-3. Make exploatory plots.
+3. Make exploratory plots.
 
 Summary:
 - Turnover is 16.12 %, and with that relatively high.
-- The longer in the company/older the the unlikely the leave.
+- The longer in the company/older, the  unlikely the leave.
 - The following features lead to higher attrition:
 	BusinessTravel              Travel_Frequently
 	Department                  Sales
-	EducationField              Technical Degreee, Human Resource, Marketing
+	EducationField              Technical Degree, Human Resource, Marketing
 	Gender                      Male
-	JobRole                     Laboratory Technician, Sales Representataive, Human Rersources
+	JobRole                     Laboratory Technician, Sales Representative, Human Resources
 	MaritalStatus               Single
 	OverTime                    Yes
 
-4. Transform the categories to numericals
+4. Transform the categories to numerical.
 5. Check the correlation across the different features.
 
 Summary: 
@@ -113,7 +112,7 @@ Summary:
 	- PerformanceRating correlates with PercentSalaryHike.
 	- Department correlates with role.
 
-6. Check if the coocurance of different features at different levels influences the attrition
+6. Check if the co-ocurance of different features at different levels influences the attrition
 	a) Age + MonthlyIncome
 	b) OverTime, MonthlyIncome
 	c) WorkLifeBalance, RelationshipSatisfaction
@@ -135,7 +134,7 @@ ________________________________________________________
 1. RandomForestClassifier
 2. LightGBM
 3. XGboost
-4. Bagging the estimations of te three models
+4. Bagging the estimations of the three models
 
 Summary:
 
